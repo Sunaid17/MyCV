@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataViz Pro | Analytics Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <span class="logo">◉</span>
+            <span>DataViz</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="active">
+                <span class="nav-icon">◆</span>
+                Dashboard
+            </a>
+            <a href="#">
+                <span class="nav-icon">◇</span>
+                Analytics
+            </a>
+            <a href="#">
+                <span class="nav-icon">○</span>
+                Reports
+            </a>
+            <a href="#">
+                <span class="nav-icon">◈</span>
+                Settings
+            </a>
+        </nav>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div class="search-bar">
+                <span>🔍</span>
+                <input type="text" placeholder="Search data, reports...">
+            </div>
+            <div class="topbar-right">
+                <button class="notification-btn">🔔<span class="badge">3</span></button>
+                <div class="user-avatar">SB</div>
+            </div>
+        </header>
+
+        <div class="dashboard">
+            <div class="dashboard-header">
+                <h1>Analytics Dashboard</h1>
+                <div class="date-range">
+                    <button class="active">Today</button>
+                    <button>Week</button>
+                    <button>Month</button>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-content">
+                        <span class="stat-label">Total Users</span>
+                        <span class="stat-value">24,589</span>
+                        <span class="stat-change positive">+12.5%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-content">
+                        <span class="stat-label">Revenue</span>
+                        <span class="stat-value">$84,320</span>
+                        <span class="stat-change positive">+8.2%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👁</div>
+                    <div class="stat-content">
+                        <span class="stat-label">Page Views</span>
+                        <span class="stat-value">156,892</span>
+                        <span class="stat-change negative">-2.4%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⏱</div>
+                    <div class="stat-content">
+                        <span class="stat-label">Avg. Session</span>
+                        <span class="stat-value">4m 32s</span>
+                        <span class="stat-change positive">+5.1%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Revenue Over Time</h3>
+                    </div>
+                    <div class="chart-body">
+                        <div class="simple-chart">
+                            <div class="bar" style="--height: 40%;"><span>$12k</span></div>
+                            <div class="bar" style="--height: 65%;"><span>$18k</span></div>
+                            <div class="bar" style="--height: 55%;"><span>$15k</span></div>
+                            <div class="bar" style="--height: 80%;"><span>$22k</span></div>
+                            <div class="bar" style="--height: 90%;"><span>$25k</span></div>
+                            <div class="bar" style="--height: 75%;"><span>$21k</span></div>
+                            <div class="bar active" style="--height: 100%;"><span>$28k</span></div>
+                        </div>
+                        <div class="chart-labels">
+                            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Traffic Sources</h3>
+                    </div>
+                    <div class="chart-body">
+                        <div class="donut-chart">
+                            <div class="donut">◉</div>
+                            <div class="legend">
+                                <div class="legend-item"><span class="dot" style="background: #8b5cf6;"></span> Direct 45%</div>
+                                <div class="legend-item"><span class="dot" style="background: #06b6d4;"></span> Search 30%</div>
+                                <div class="legend-item"><span class="dot" style="background: #f472b6;"></span> Social 25%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-card">
+                <div class="table-header">
+                    <h3>Top Pages</h3>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Page</th>
+                            <th>Views</th>
+                            <th>Unique</th>
+                            <th>Avg. Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>/home</td>
+                            <td>12,456</td>
+                            <td>8,234</td>
+                            <td>2:34</td>
+                        </tr>
+                        <tr>
+                            <td>/products</td>
+                            <td>8,921</td>
+                            <td>6,123</td>
+                            <td>4:12</td>
+                        </tr>
+                        <tr>
+                            <td>/about</td>
+                            <td>5,432</td>
+                            <td>3,891</td>
+                            <td>1:45</td>
+                        </tr>
+                        <tr>
+                            <td>/contact</td>
+                            <td>3,210</td>
+                            <td>2,567</td>
+                            <td>1:12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

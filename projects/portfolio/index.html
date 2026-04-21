@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPortfolio | Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">&lt;Dev/&gt;</a>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Sunaid Isidine Bicá</h1>
+            <p class="hero-role">&lt;AI Engineer /&gt;</p>
+            <p class="hero-bio">Building intelligent solutions with code and AI. Passionate about creating impactful technology that makes a difference.</p>
+            <div class="hero-links">
+                <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                <a href="#projects" class="btn btn-outline">View Work</a>
+            </div>
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>Django</span>
+                <span>JavaScript</span>
+                <span>AI/ML</span>
+                <span>Git</span>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"Sunaid Bicá"</span>,
+  <span class="property">role</span>: <span class="string">"AI Engineer"</span>,
+  <span class="property">skills</span>: [<span class="string">"Python"</span>, <span class="string">"Django"</span>, <span class="string">"AI/ML"</span>],
+  <span class="property">passion</span>: <span class="string">"Building the future"</span>,
+  <span class="property">status</span>: <span class="string">"Available for work"</span>
+};
+
+<span class="comment">// Let's build something amazing together!</span></code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm an AI Engineering student at HyperionDev, passionate about building intelligent solutions. My journey in tech started with curiosity about how AI works, and it has grown into a genuine love for creating impactful applications.</p>
+                <p>I specialize in Python, Django, web development, and AI/ML technologies. I love building applications that solve real problems and make people's lives easier.</p>
+                <p>When I'm not coding, you can find me exploring new AI technologies, contributing to open-source projects, or learning about the latest developments in machine learning.</p>
+            </div>
+            <div class="about-image">
+                <div class="avatar-placeholder">SB</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-number">01</div>
+                <h3>News Application</h3>
+                <p>A Django-powered news platform with user authentication, article management, newsletter subscriptions, and REST API integration.</p>
+                <div class="project-tags">
+                    <span>Django</span>
+                    <span>REST API</span>
+                    <span>Python</span>
+                </div>
+                <a href="#" class="project-link">View Project →</a>
+            </article>
+            <article class="project-card">
+                <div class="project-number">02</div>
+                <h3>MarketNest</h3>
+                <p>Full-featured e-commerce platform with buyer/vendor dashboards, order management, and secure payments.</p>
+                <div class="project-tags">
+                    <span>Django</span>
+                    <span>E-commerce</span>
+                    <span>PostgreSQL</span>
+                </div>
+                <a href="#" class="project-link">View Project →</a>
+            </article>
+            <article class="project-card">
+                <div class="project-number">03</div>
+                <h3>AI Assistant</h3>
+                <p>Smart AI chatbot interface with modern UI, context awareness, and multi-language support capabilities.</p>
+                <div class="project-tags">
+                    <span>AI</span>
+                    <span>JavaScript</span>
+                    <span>UI/UX</span>
+                </div>
+                <a href="#" class="project-link">View Project →</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="section-header">
+            <h2>Latest Posts</h2>
+        </div>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <span class="blog-date">April 15, 2025</span>
+                <h3>Getting Started with AI Development</h3>
+                <p>A beginner's guide to starting your journey in AI engineering and machine learning.</p>
+                <a href="#">Read More →</a>
+            </article>
+            <article class="blog-card">
+                <span class="blog-date">April 10, 2025</span>
+                <h3>Django Best Practices</h3>
+                <p>Tips and tricks for building scalable Django applications.</p>
+                <a href="#">Read More →</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Let's collaborate on your next project</p>
+        </div>
+        <form class="contact-form">
+            <div class="form-row">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Sunaid Isidine Bicá. Built with code & coffee.</p>
+            <div class="social-links">
+                <a href="https://github.com">GitHub</a>
+                <a href="https://www.linkedin.com/in/suneid-bica-1747a33b0">LinkedIn</a>
+                <a href="mailto:bsuneid@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
